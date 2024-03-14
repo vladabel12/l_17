@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+<body>
+    <h1 class="mb-4">Модальне вікно</h1>
+
+    <button data-modal-button="modal-1" class="btn btn-outline-primary mb-1" type="button">
+        відкрити модальне вікно №1
+    </button>
+
+    <button data-modal-button="modal-2" class="btn btn-outline-primary mb-1" type="button">
+        відкрити модальне вікно №2
+    </button>
+
+    <div id="modal-1" data-modal class="fade-block hidden">
+        <div class="modal-window">
+            <div class="card">
+                <div class="card-header">
+                    Модальне вікно №1
+                </div>
+                <div class="card-body">
+                    <p>
+                        Територія сучасної України була домом для різноманітних цивілізацій і народів протягом тисячоліть. Від ранніх слав'янських племен до великих держав, таких як Київська Русь та Галицько-Волинська держава, імперії, такі як Литовсько-Руська держава, та різних культурних впливів, територія надавала житлище для різноманіття цивілізацій.
+                    </p>
+                    <button data-modal-close type="button" class="btn btn-dark">Закрити вікно</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" data-modal class="fade-block hidden">
+        <div class="modal-window">
+            <div class="card">
+                <div class="card-header">
+                    Модальне вікно №2
+                </div>
+                <div class="card-body">
+                    <p>
+                        Епоха козацтва відіграла значну роль у формуванні української національної свідомості. Козацькі війська відстоювали незалежність та свободу України від зовнішніх загроз і здійснювали активні експансійні походи на територію Польщі, Туреччини та Росії. Козацький героїзм і військовий дух стали символами національної гордості.
+                    </p>
+                    <button data-modal-close type="button" class="btn btn-dark">Закрити вікно</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
